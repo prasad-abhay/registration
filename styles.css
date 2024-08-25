@@ -1,0 +1,123 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #cfdced;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    margin-top: 2rem;
+    background-color: #ffffff;
+    padding: 5px 30px;
+    border-radius: 12px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.25);
+    width: 90%;
+    max-width: 380px; /* Adjusted to make the form narrower */
+    animation: fadeIn 0.6s ease-in-out;
+}
+.credit{
+    color: #6f6c6c;
+    
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #666;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"] {
+    width: 90%;
+    padding: 10px 14px; /* Reduced padding */
+    border: 1px solid #655d5d;
+    border-radius: 8px;
+    font-size: 14px; /* Slightly reduced font size */
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus {
+    border-color: #6200ee;
+    background-color: #ffffff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(98, 0, 238, 0.3);
+}
+
+button {
+    width: 100%;
+    padding: 12px; /* Reduced padding */
+    background-color: #6200ee;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px; /* Slightly reduced font size */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #5300d6;
+    transform: translateY(-2px);
+}
+
+button:active {
+    background-color: #4300b8;
+    transform: translateY(0);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+input::placeholder {
+    color: #bbb;
+    font-style: italic;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
